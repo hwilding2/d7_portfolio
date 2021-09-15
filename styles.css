@@ -1,0 +1,87 @@
+body {
+    background-color:#D4D6D5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight:100;
+    letter-spacing: 1.5px;
+}
+
+.contactul {
+    list-style-type: none;
+    background-color:#EEEDEB;
+    height:1.5em;
+    margin-top: 0em;
+    padding: 0em;
+}
+
+.contactli {
+    display: inline;
+    font-weight: bold;
+    font-size: 0.7em;
+    font-style: none;
+}
+
+li a {
+    display: block inline;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background-color: #EEEDEB;
+    color:gray;
+}
+
+li a:hover {
+    background-color:gray;
+    color:white;
+}
+
+.container {
+    width: 75%;
+    text-align: center;
+    margin: 4em auto;
+    background-color:#EEEDEB;
+    border-radius: 2em;
+    box-shadow: 0.5em 0.5em 1em 0em gray;
+}
+
+hr {
+    border-top: 0.75em solid #D4D6D5;
+}
+
+.col1 {
+    float: left;
+    width: 30%;
+    background-color: #E6DDDA;
+    padding: 4em 0em;
+    border-radius: 2em;
+    /* margin: 1em; */
+  }
+
+.col2 {
+    float: left;
+    width: 60%;
+    text-align: left;
+    margin-left: 2em;
+    padding: 2em 0em;
+    border-radius: 2em;
+    font-size: 0.95em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#profile {
+    width: 80%;
+    border-radius: 50%;
+    margin: 2em auto;
+    filter: brightness(120%);
+    box-shadow: 0.5em 0.5em 1em 0em gray;
+
+}
