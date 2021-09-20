@@ -42,10 +42,13 @@ li a:hover {
 .container {
     width: 75%;
     text-align: center;
-    margin: 4em auto;
     background-color:#EEEDEB;
     border-radius: 2em;
     box-shadow: 0.5em 0.5em 1em 0em gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4em auto;
 }
 
 hr {
@@ -53,22 +56,24 @@ hr {
 }
 
 .col1 {
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 30%;
     background-color: #E6DDDA;
     padding: 4em 0em;
     border-radius: 2em;
-    /* margin: 1em; */
   }
 
 .col2 {
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 60%;
     text-align: left;
-    margin-left: 2em;
-    padding: 2em 0em;
     border-radius: 2em;
     font-size: 0.95em;
+    margin-right: 4em;
 }
 
 .row:after {
@@ -85,3 +90,53 @@ hr {
     box-shadow: 0.5em 0.5em 1em 0em gray;
 
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        padding: 0em;
+    }
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        padding: 0em;
+        margin: 0em -3em;
+        font-size: 0.75em;
+    }
+
+    .contactli {
+        font-size: 0.5em;
+    }
+
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 2040px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        padding: 0em;
+    }
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        padding: 0em;
+        margin: 0em -3em;
+        font-size: 0.75em;
+    }
+
+    #profile {
+        max-width: 450px;
+    }
+
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 2040px) {
+  }
